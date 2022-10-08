@@ -5,6 +5,9 @@
 # Session Data files
 .RData
 
+# Secrets
+setup/instructions
+
 # User-specific files
 .Ruserdata
 webpage
