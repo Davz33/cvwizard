@@ -1,0 +1,14 @@
+{
+  "name": "560da6d7603d95fc",
+  "main": "560da6d7603d95fc@168.js",
+  "version": "168.0.0",
+  "homepage": "https://observablehq.com/d/560da6d7603d95fc",
+  "author": {
+    "name": "Davide_Vitiello",
+    "url": "https://observablehq.com/@davz33"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
