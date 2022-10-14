@@ -1,16 +1,8 @@
-# run ?datadrivencv::use_datadriven_cv to see more details
-datadrivencv::use_datadriven_cv(
-  full_name = "Nick Strayer",
-  data_location = "https://docs.google.com/spreadsheets/d/14MQICF2F8-vf8CKPF1m4lyGKO6_thG-4aSwat1e2TWc",
-  pdf_location = "https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf",
-  html_location = "nickstrayer.me/cv/",
-  source_location = "https://github.com/nstrayer/cv"
-)
-datadrivencv::use_datadriven_cv(
+dav.adrivencv::use_datadriven_cv(
   full_name = "Davide Vitiello",
   data_location =
     "https://docs.google.com/spreadsheets/d/1RfW6iPfPIFxHtlugddm7WzZYB7pxrMBej-SJEAtE-Eo",
-  pdf_location = "https://github.com/Davz33/cv/davide_vitiello_cv.pdf",
-  html_location = "davidevitiello.me/cv/",
-  source_location = "https://github.com/Davz33/cv"
+  pdf_location = "https://github.com/Davz33/cvwizard/raw/main/cv.pdf",
+  html_location = "davidevitiello.com",
+  source_location = "https://github.com/Davz33/cvizard"
 )
