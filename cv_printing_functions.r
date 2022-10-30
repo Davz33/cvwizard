@@ -178,6 +178,12 @@ print_text_block <- function(cv, label) {
   invisible(strip_res$cv)
 }
 
+print_automat_block <- \(cv,link){
+  glue::glue("<br>This resume has been continuously ingesting updates from _[groun",
+             "d data]({link})_ and self-updating") %>%
+    cat()
+  invisible(cv)
+}
 
 
 #' @description Construct a bar chart of skills
