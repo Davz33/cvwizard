@@ -248,7 +248,12 @@ Links {data-icon=link}
 print_contact_info <- function(cv) {
   glue::glue_data(
     cv$contact_info,
-    "- <i class='fa fa-{icon}'></i> {contact}"
+    "- <i class='fa fa-{icon}'></i> {contact}",.transformer = \(text,env){
+      res <- eval(parse(text = text, keep.source = FALSE), env)
+      res[grepl("github.com",res)] <- sapply(res[grepl("github.com",res)],
+                                             \(s)glue::glue("[{s}](https://{s})"))
+      res
+    }
   ) %>% print()
 
   invisible(cv)
