@@ -5,19 +5,19 @@ options(pagedown.remote.sleeptime=2) # time in second between attempt
 
 
 # Knit the HTML version
-rmarkdown::render("cv.rmd",
+rmarkdown::render("cv de.rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv.html")
+                  output_file = "cv de.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("cv.rmd",
+rmarkdown::render("cv de.rmd",
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "cv.pdf")
+                       output = "cv de.pdf")
 
 system("cp cv.html ../mypage/public/")
 system("cp cv.pdf ../mypage/")

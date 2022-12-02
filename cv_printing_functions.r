@@ -179,9 +179,17 @@ print_text_block <- function(cv, label) {
 }
 
 print_automat_block <- \(cv,link){
+  if(LANG=='EN'){
+
   glue::glue("<br>This resume has been continuously ingesting updates from _[groun",
              "d data]({link})_ and self-updating") %>%
     cat()
+  }
+  if(LANG=='DE'){
+    glue::glue("<br>Dieser Lebenslauf nimmt ständig Aktualisierungen von _[Ground",
+               "-Data]({link})_ auf und aktualisiert sich selbst.") %>%
+      cat()
+  }
   invisible(cv)
 }
 
